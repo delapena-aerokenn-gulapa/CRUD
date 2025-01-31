@@ -3,7 +3,7 @@
 =======
 <?php
 include '../functions/crud.php';
-$users = read();
+
 ?>
 
 <!DOCTYPE html>
