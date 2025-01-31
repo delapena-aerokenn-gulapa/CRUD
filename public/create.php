@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 include 'config.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -34,3 +35,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <a href="index.php">Back to List</a>
 </body>
 </html>
+=======
+include '../functions/crud.php';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (create($_POST['name'], $_POST['email'])) {
+        header("Location: index.php");
+    } else {
+        echo "Failed to create user.";
+    }
+}
+?>
+
+<form method="POST">
+    <input type="text" name="name" placeholder="Name" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <button type="submit">Create now</button>
+</form>
+>>>>>>> e8b8e75c4b223745e501cf183856569e90c46b67
