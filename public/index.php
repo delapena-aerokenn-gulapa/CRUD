@@ -1,9 +1,6 @@
-<<<<<<< HEAD
-                                                                                    
-=======
 <?php
-include '../functions/crud.php';
-
+include 'includes/dbconn.php';
+session_start();
 ?>
 
 <!DOCTYPE html>

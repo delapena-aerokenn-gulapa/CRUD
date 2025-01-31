@@ -1,4 +1,9 @@
 <?php
+include 'includes/dbconn.php';
+session_start();
+?>
+
+<?php
 include 'config.php';
 
 if (!isset($_GET['id'])) {
