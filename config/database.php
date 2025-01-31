@@ -1,16 +1,6 @@
-<<?php 
-$host = "localhost";
-$db_name = "crud_db";
-$username = "root";
-$password = "";
+<?php
+>$conn = new mysql('localhost', 'root', '', 'crud_db');
 
-$conn = new mysqli($host, $username, $password, $db_name);
-
-if($conn->connect_error){
-    die("Connection failed: " .
-$conn->connect_error);
+if ($conn->connect_error) {
+    die("connection error: " . $conn->connect_error);
 }
-
-
-
-?>
